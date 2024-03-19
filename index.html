@@ -5,10 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            text-align: center;
+
+        }
+
+        h1 {
+            margin: 40px 0;
+            font-size: 3rem;
+        }
+
+        #container {
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+            margin: 45px 0;
+            height: 250px;
+            width: 100%;
+            /* border: 1px solid red; */
+            color: white;
+            font-weight: 200;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        button {
+            /* height: 40px; */
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(122, 122, 235);
+            color: white;
+        }
+
+        button:hover {
+            background-color: rgb(78, 78, 197);
+            transition: 0.3s ease;
+            /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Dad Jokes generator</h1>
+    <h1 id="dadJokes">DAD JOKES GENRATOR</h1>
+
+    <div id="container"></div>
+
+    <button id="btn">GET A JOKE FROM DAD</button>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        function animation() {
+
+            gsap.set("#dadJokes", {
+                opacity: 0,
+                y: 0
+            });
+            gsap.to("#dadJokes", {
+                duration: 1,
+                opacity: 1,
+                y: 50,
+                ease: "power4.out"
+            });
+        }
+
+        setInterval(animation, 1000);
+    </script> -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
